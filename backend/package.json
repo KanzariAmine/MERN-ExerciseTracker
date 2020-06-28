@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "BackEnd for exercise traker",
+  "main": "index.js",
+  "author": "Mahmoud Amine Kanzari",
+  "license": "MIT",
+  "scripts": {
+    "client-install": "yarn add --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd .. && yarn start",
+    "dev": "concurrently  \"yarn run server\" \"yarn run client\""
+  },
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.18"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
